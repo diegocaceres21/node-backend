@@ -1,22 +1,50 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema({
-    username:{
+const horarioSchema = new mongoose.Schema({
+    carrera :{
         type: String,
         required: true,
         trim: true,
-        unique: true
+        unique: false,
     },
-    email:{
-        type: String,
-        required: true,
+    opcion :{
+        type: Number,
+        required: false,
         trim: true,
-        unique: true
+        unique: false
     },
-    password:{
+    comentario:{
         type: String,
-        required: true,
+        required: false,
     },
- })
+    horario: [ {
+        sigla:{
+            type: String,
+            required: true,
+            trim: true,
+            unique: false
+        },
+        asignatura:{
+            type: String,
+            required: true,
+            trim: true,
+            unique: false
+        },
+        paralelo:{
+            type: String,
+            required: true,
+            trim: true,
+            unique: false
+        },
+        horario:{
+            type: String,
+            required: true,
+            trim: true,
+            unique: false
+        }
+    }]
+ },{
+    timestamps: true
+})
 
- export default mongoose.model('Horario', userSchema)
+ export default mongoose.model('Horario', horarioSchema)

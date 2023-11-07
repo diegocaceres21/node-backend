@@ -24,7 +24,7 @@ const horarioSchema = new mongoose.Schema({
             trim: true,
             unique: false
         },
-        asignatura:{
+        materia:{
             type: String,
             required: true,
             trim: true,

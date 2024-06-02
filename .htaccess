@@ -1,0 +1,7 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/gsbxgryb/cba.ucb.edu.bo/horariosbackend"
+PassengerBaseURI "/horariosbackend"
+PassengerNodejs "/home/gsbxgryb/nodevenv/cba.ucb.edu.bo/horariosbackend/18/bin/node"
+PassengerAppType node
+PassengerStartupFile loader.cjs
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END

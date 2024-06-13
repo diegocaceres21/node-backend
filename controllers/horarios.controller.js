@@ -8,7 +8,15 @@ export const getHorarios = async (req, res) => {
     const horarios = await Horario.find({ carrera: carrera })
     res.json(horarios)
 }
-
+export const getAllHorarios = async (req, res) => {
+    try {
+        const horarios = await Horario.find()
+        res.json(horarios)
+    }
+    catch (error) {
+        res.status(500).json({ error: 'Internal server error' });
+    }
+}
 export const getOpciones = async (req, res) => {
     const { carrera } = req.query;
 

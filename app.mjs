@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser"
 import authRoutes from "./routes/auth.routes.js"
 import horarioRoutes from "./routes/horario.routes.js"
 import cors from 'cors';
+import reporteRoutes from "./routes/reporte.routes.js";
 
 const corsOptions = {
     origin: 'http://localhost:4200', // Replace with the actual origin of your Angular app
@@ -19,5 +20,6 @@ app.use(cors(corsOptions));
 
 app.use("/horariosbackend", authRoutes);
 app.use("/horariosbackend", horarioRoutes);
+app.use("/horariosbackend", reporteRoutes)
 
 export default app;

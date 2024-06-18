@@ -1,5 +1,4 @@
 import Reporte from "../models/reportes.model.js";
-import Horario from "../models/opcion-horario.model.js";
 export const getReporteById = async (req, res) => {
     const reporte = await Reporte.findById(req.params.id)
     if(!reporte) return res.status(404).json

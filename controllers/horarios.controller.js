@@ -92,3 +92,28 @@ export const deleteHorario = async (req, res) => {
     if(!horario) return res.status(404).json({message: "No se encontro ningun horario"})
     res.sendStatus(204)
 }
+
+export const getHorariosGroupedByCarrera = async (req, res) => {
+    try {
+        const horarios = await Horario.find();
+
+        const groupedHorarios = horarios.reduce((acc, curr) => {
+            const carrera = curr.carrera;
+            if (!acc[carrera]) {
+                acc[carrera] = [];
+            }
+            acc[carrera].push(curr);
+            return acc;
+        }, {});
+
+        const result = Object.keys(groupedHorarios).map(carrera => ({
+            carrera,
+            opciones: groupedHorarios[carrera]
+        }));
+
+        res.json(result);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Error al obtener los horarios');
+    }
+};

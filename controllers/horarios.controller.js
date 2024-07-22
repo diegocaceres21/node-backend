@@ -10,10 +10,9 @@ export const getHorarios = async (req, res) => {
 }
 export const getAllHorarios = async (req, res) => {
     try {
-        const horarios = await Horario.find()
-        res.json(horarios)
-    }
-    catch (error) {
+        const horarios = await Horario.find().sort({ carrera: 1 });
+        res.json(horarios);
+    } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
 }

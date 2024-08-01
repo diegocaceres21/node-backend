@@ -3,6 +3,9 @@ import bcrypt from 'bcryptjs'
 import {createAccessToken} from "../libs/jwt.js";
 import jwt from "jsonwebtoken"
 import {TOKEN_SECRET_KEY} from "../config.js";
+import {OAuth2Client} from 'google-auth-library';
+const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+
 
 export const register = async (req, res) => {
     const {email, password, username} = req.body
@@ -48,6 +51,40 @@ export const login = async (req, res) => {
         res.status(500).json({message: error.message})
     }
 };
+
+
+export const loginGoogle = async (req, res) => {
+    try {
+        const ticket = await client.verifyIdToken({
+            idToken : req.body.credential,
+            audience : process.env.GOOGLE_CLIENT_ID
+        });
+        const payload = ticket.getPayload();
+        const userDetails = {
+            email : payload['email'],
+            firstname : payload['given_name'],
+            lastname : payload['family_name']
+        }
+        let user = await User.findOne({ email: userDetails.email });
+        if(!user){
+            return res.status(404).json({ message: 'Usuario no encontrado' });
+        }
+        const token = await createAccessToken({id: user._id})
+        //let token = jwt.sign(userDetails, process.env.SECRET_KEY);
+        res.cookie("token", token)
+        /*res.json({
+            email: userDetails.email,
+            nombre: userDetails.firstname,
+            apellido: userDetails.lastname
+        })*/
+        res.redirect("http://localhost:4200/horarios/opciones")
+
+        //res.status(200).json({ token: token })
+    }
+    catch (error){
+        res.status(500).json({message: error.message})
+    }
+}
 
 export const logout = (req, res) => {
     res.cookie("token","",{

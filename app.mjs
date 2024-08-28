@@ -6,6 +6,7 @@ import horarioRoutes from "./routes/horario.routes.js"
 import cors from 'cors';
 import reporteRoutes from "./routes/reporte.routes.js";
 import periodoRoutes from "./routes/periodo.routes.js";
+import documentosRoutes from "./routes/documentos.routes.js";
 
 const corsOptions = {
     origin: 'http://localhost:4200', // Replace with the actual origin of your Angular app
@@ -21,6 +22,7 @@ app.use(cors(corsOptions));
 
 app.use("/horariosbackend", authRoutes);
 app.use("/horariosbackend", horarioRoutes);
-app.use("/horariosbackend", reporteRoutes)
-app.use("/horariosbackend", periodoRoutes)
+app.use("/horariosbackend", reporteRoutes);
+app.use("/horariosbackend", periodoRoutes);
+app.use("/horariosbackend", documentosRoutes);
 export default app;

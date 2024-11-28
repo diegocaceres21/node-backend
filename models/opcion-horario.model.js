@@ -42,7 +42,14 @@ const horarioSchema = new mongoose.Schema({
             trim: true,
             unique: false
         }
-    }]
+    }],
+    tipo:{
+        type: String,
+        required: true,
+        trim: true,
+        unique: false,
+        enum: ['TRASPASO', 'NUEVO']
+    }
  },{
     timestamps: true
 })

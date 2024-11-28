@@ -5,54 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="013c7cc9-9a55-494f-875a-36c701df9c37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/documentos.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plantillas/carta-traspaso.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plantillas/documentos-entregados.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/documentos.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/siaan.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/siaan.routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/app.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/horarios.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/horarios.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jwt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/opcion-horario.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/opcion-horario.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/.github/FUNDING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/.nycrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/.nycrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/callBound.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/callBound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/test/callBound.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/test/callBound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/call-bind/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/call-bind/test/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/function-bind/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/.jscs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/function-bind/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/function-bind/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/implementation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/function-bind/implementation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/function-bind/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/function-bind/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/test/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/function-bind/test/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/function-bind/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/function-bind/test/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/.github/FUNDING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/.nycrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/.nycrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/test/GetIntrinsic.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/test/GetIntrinsic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/has/LICENSE-MIT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/has/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/has/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/has/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/has/test/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/horario.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/horario.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,12 +50,13 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.14.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.14.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Internet/Proyectos/node-backend/plantillas&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Internet/Proyectos/simulador-ucb-backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -139,6 +104,31 @@
       <workItem from="1724696986197" duration="1210000" />
       <workItem from="1724767145279" duration="4859000" />
       <workItem from="1724848841314" duration="10490000" />
+      <workItem from="1724935166156" duration="766000" />
+      <workItem from="1725282592163" duration="1208000" />
+      <workItem from="1725454212399" duration="107000" />
+      <workItem from="1725454463914" duration="199000" />
+      <workItem from="1725454680817" duration="1935000" />
+      <workItem from="1728047314166" duration="592000" />
+      <workItem from="1728487023238" duration="2170000" />
+      <workItem from="1729614359591" duration="1721000" />
+      <workItem from="1730402946651" duration="589000" />
+      <workItem from="1730817302803" duration="608000" />
+      <workItem from="1731166600891" duration="596000" />
+      <workItem from="1731338942484" duration="4258000" />
+      <workItem from="1731415021013" duration="2490000" />
+      <workItem from="1731936527158" duration="6000" />
+      <workItem from="1731936758685" duration="11000" />
+      <workItem from="1731956948733" duration="1308000" />
+      <workItem from="1732020326889" duration="4714000" />
+      <workItem from="1732106730736" duration="4410000" />
+      <workItem from="1732193997856" duration="2768000" />
+      <workItem from="1732295373753" duration="1431000" />
+      <workItem from="1732538436243" duration="81000" />
+      <workItem from="1732543858050" duration="2127000" />
+      <workItem from="1732655052432" duration="19000" />
+      <workItem from="1732742106214" duration="811000" />
+      <workItem from="1732799165477" duration="4112000" />
     </task>
     <servers />
   </component>

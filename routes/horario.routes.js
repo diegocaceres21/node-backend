@@ -6,12 +6,13 @@ import {
     createHorario,
     deleteHorario,
     updateHorario,
-    getOpciones, getOpcion, getAllHorarios, getHorariosGroupedByCarrera
+    getOpciones, getOpcion, getAllHorarios, getHorariosGroupedByCarrera, getAllHorariosByTipo
 } from "../controllers/horarios.controller.js"
 
 const router = Router();
 router.get('/horarios', authRequired,getHorarios)
 router.get('/horarios/all', authRequired,getAllHorarios)
+router.get('/horarios/PorTipo', authRequired,getAllHorariosByTipo)
 router.get('/horarios/opciones', authRequired,getOpciones)
 router.get('/horarios/opciones/:opcion', authRequired,getOpcion)
 router.get('/horarios/grupo/carrera', authRequired,getHorariosGroupedByCarrera)

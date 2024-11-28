@@ -16,15 +16,32 @@ export const getAllHorarios = async (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 }
+
+export const getAllHorariosByTipo = async (req, res) => {
+    const { tipo } = req.query;
+
+    if (!tipo) {
+        return res.status(400).json({ error: 'Query parameter tipo is required' });
+    }
+    try {
+        const horarios = await Horario.find({tipo: tipo}).sort({ carrera: 1 });
+        res.json(horarios);
+    } catch (error) {
+        res.status(500).json({ error: 'Internal server error' });
+    }
+}
 export const getOpciones = async (req, res) => {
-    const { carrera } = req.query;
+    const { carrera, tipo } = req.query;
 
     if (!carrera) {
         return res.status(400).json({ error: 'Query parameter carrera is required' });
     }
 
+    if (!tipo) {
+        return res.status(400).json({ error: 'Query parameter tipo is required' });
+    }
     try {
-        const horarios = await Horario.find({ carrera: carrera }, { opcion: 1, _id: 0 });
+        const horarios = await Horario.find({ carrera: carrera, tipo: tipo }, { opcion: 1, _id: 0 });
         res.json(horarios.map(horario => horario.opcion));
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
@@ -51,7 +68,7 @@ export const getHorario = async (req, res) => {
 }
 export const createHorario = async (req, res) => {
     try {
-        const { carrera, comentario, horario } = req.body;
+        const { carrera, comentario, horario, tipo } = req.body;
 
         // Find the highest "opcion" for the given "carrera"
         const highestOption = await Horario.findOne({ carrera })
@@ -71,6 +88,7 @@ export const createHorario = async (req, res) => {
             opcion: nextOption,
             comentario,
             horario,
+            tipo
         });
 
         const savedHorario = await newHorario.save();

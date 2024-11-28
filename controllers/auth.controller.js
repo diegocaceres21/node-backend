@@ -42,6 +42,7 @@ export const login = async (req, res) => {
 
         const token = await createAccessToken({id: userFound._id})
         res.cookie("token", token)
+        res.cookie("email", userFound.email)
         res.json({
             id: userFound._id,
             username: userFound.username,
@@ -72,11 +73,7 @@ export const loginGoogle = async (req, res) => {
         const token = await createAccessToken({id: user._id})
         //let token = jwt.sign(userDetails, process.env.SECRET_KEY);
         res.cookie("token", token)
-        /*res.json({
-            email: userDetails.email,
-            nombre: userDetails.firstname,
-            apellido: userDetails.lastname
-        })*/
+        res.cookie("email", payload['email'])
         res.redirect("http://localhost:4200/horarios/opciones")
 
         //res.status(200).json({ token: token })

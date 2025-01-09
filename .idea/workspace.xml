@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="013c7cc9-9a55-494f-875a-36c701df9c37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/siaan.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/siaan.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/app.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/horarios.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/horarios.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jwt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/opcion-horario.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/opcion-horario.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/horario.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/horario.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/siaan.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/siaan.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +119,16 @@
       <workItem from="1732543858050" duration="2127000" />
       <workItem from="1732655052432" duration="19000" />
       <workItem from="1732742106214" duration="811000" />
-      <workItem from="1732799165477" duration="4112000" />
+      <workItem from="1732799165477" duration="5190000" />
+      <workItem from="1733144842011" duration="1181000" />
+      <workItem from="1733750825941" duration="2828000" />
+      <workItem from="1734354515694" duration="1308000" />
+      <workItem from="1734700581519" duration="603000" />
+      <workItem from="1734961439056" duration="637000" />
+      <workItem from="1735849172019" duration="595000" />
+      <workItem from="1735913865522" duration="962000" />
+      <workItem from="1736275419594" duration="597000" />
+      <workItem from="1736449812345" duration="1255000" />
     </task>
     <servers />
   </component>
